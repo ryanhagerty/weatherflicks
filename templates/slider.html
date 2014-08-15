@@ -1,0 +1,55 @@
+<div class="row">
+  <!-- main movie image -->
+  <div class="movie-cover animated columns small-12 medium-6" animate-enter="movieAnimateIn">
+            <img ng-src="{{poster}}" />
+            <img ng-src="{{posterNext}}" class="poster-next"  />  
+  </div>
+  <!-- /main movie image -->
+
+  <!-- movie info area -->
+  <div class="columns small-12 medium-6">
+    <div class="movie-info">
+        <h2>{{title}}</h2>
+        <div class="info-text border overflow dark-background">
+            <div class="columns small-6">
+                <i class="fi-calendar"></i><p>{{year}}</p>
+            </div>
+            <div class="columns small-6 runtime border-left">
+                <i class="fi-clock"></i><p>{{runtime}}</p>
+            </div>
+        </div>
+
+        <!-- star rating -->
+        <div class="columns small-12">
+            <ul class="star-background" ng-class="done ? 'hide' : 'show'">
+              <li><i class="fi-star"></i><li><i class="fi-star"></i><li><i class="fi-star"></i><li><i class="fi-star"></i><li><i class="fi-star"></i>
+            </ul>
+            <ul class="rating">
+              <li class="average hide-for-medium-down">{{avg}}</li>
+              <li ng-repeat="stars in starArray" ng-class="{last : $last}">
+                  <i class="fi-star" ng-style="{width : starWidth}"></i>
+              </li>
+            </ul>
+        </div>
+        <!-- /star rating -->
+
+        <h3>{{tagline}}</h3>
+        <p class="movie-description">{{overview}}</p>
+
+        <div class="info-text border overflow dark-background">
+          
+          <div class="columns small-12">
+              <h4><a href="http://www.amazon.com/s/url=search-alias%3Ddvd&field-keywords={{title}}">Watch on Amazon</a></h4>
+          </div>
+          
+        </div>
+
+        <div class="navigation-buttons">  
+            <a href="#top"><button id="previous" ng-click="previousMovie(); fadeIn();" ng-disabled="finishedListPrev">Prev.</button></a>
+            <a href="#top"><button id="next" ng-click="nextMovie(); fadeIn();" ng-disabled="finishedListNext">Next</button></a>
+        </div>
+
+    </div>
+  </div>
+  <!-- /movie info area -->
+</div>

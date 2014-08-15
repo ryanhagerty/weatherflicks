@@ -1,0 +1,51 @@
+//reusable classes
+
+.border {
+	border:1px solid #808080;
+}
+
+.border-top {
+	border-top:1px solid #808080;
+}
+
+.border-right {
+	border-right:1px solid #808080;
+	&.border-left {
+		border-right:none;
+		@media #{$medium} {
+			border-right:1px solid #808080;
+		}
+	}
+}
+
+.border-bottom {
+	border-bottom:1px solid #808080;
+}
+
+.border-left {
+	border-left:1px solid #808080;
+}
+
+.dark-background {
+  background:rgba(0,0,0,0.5);
+}
+
+.loading, .show {
+	display:block;
+}
+
+.loading-done, .hide {
+	display:none;
+}
+
+.mobile-padding {
+	padding:0 15px;
+}
+
+.no-padding {
+	padding:0;
+}
+
+.overflow {
+	overflow:auto;
+}
