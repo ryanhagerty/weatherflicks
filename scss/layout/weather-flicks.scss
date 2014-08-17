@@ -23,7 +23,7 @@ h1 {
 h2 {
   font-size:36px;
   @media #{$large} {
-    font-size: 80px;
+    font-size: 64px;
   }
 }
 h3 {
@@ -49,6 +49,9 @@ button {
     border:1px solid #b8b8b8;
     font-family: "omnes-pro",sans-serif;
     text-transform: uppercase;
+    @media #{$medium-only} {
+      margin-bottom: 0;
+    }
   }
 button:focus {
   background:#008cba;
@@ -214,6 +217,8 @@ skycon {
   text-align: center;
    
   @media #{$medium-up} {
+    float:left;
+    min-height: 100px;
     padding:0 0 0 20px;
     img {
       margin-left:-2px;
@@ -256,32 +261,36 @@ skycon {
     h2, h3 {
       text-align: left;
     }
+    .movie-description {
+      font-size:18px;
+    }
   }
   @media #{$large} {
     .info-text {
       margin:31px 0 13px 0;
     }
     .movie-description {
-      margin:20px 0;
-      font-size: 24px;
+      margin:18px 0;
+      font-size: 21px;
     }
     h2 {
       margin-top:-19px;
     }
     h3 {
       margin-top:100px;
-      font-size: 36px;
+      font-size: 29px;
     }
     h4 {
-      font-size:21px;
+      font-size:18px;
     }
     button {
-      font-size:21px;
+      font-size:18px;
     }
   }
 }
 
 .info-text {
+  margin-bottom: 20px;
   line-height: 2;
   text-align: center;
   .columns {
@@ -291,7 +300,7 @@ skycon {
     line-height: 1;
     font-size: 32px;
     @media #{$large} {
-      font-size:42px;
+      font-size:36px;
     }
 
   }
@@ -302,7 +311,7 @@ skycon {
     margin:0 0 0 10px;
     font-size: 18px;
     @media #{$large} {
-      font-size:24px;
+      
     }
   }
 }
@@ -313,7 +322,7 @@ skycon {
   @media #{$large} {
     width:auto;
     i {
-      font-size:60px;
+      font-size:48px;
     }
   }
 }
@@ -323,7 +332,7 @@ skycon {
   margin:15px 0 0 205px;
   font-size:19px;
   @media #{$large} {
-    margin: 0px 0 0 290px; padding:20px 0;
+    margin: 0px 0 0 240px; padding:15px 0;
     font-size:24px;
   }
 }
@@ -350,8 +359,11 @@ ul.star-background {
   line-height: 1.1;
 }
 
-.navigation-buttons {
-  margin-top:30px;
+
+@media #{$large} {
+  .navigation-buttons {
+    margin-bottom: 20px;
+  }
 }
 
 //next two fixes ios flicker on image load/transition

@@ -30,6 +30,12 @@
   background:rgba(0,0,0,0.5);
 }
 
+@media #{$medium-up} {
+  .float-right {
+    float:right;
+  }
+}
+
 .loading, .show {
 	display:block;
 }

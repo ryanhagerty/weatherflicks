@@ -1,5 +1,13 @@
 <div class="row">
   <!-- main movie image -->
+
+  <div class="columns small-12 medium-6 float-right">
+      <div class="navigation-buttons">  
+            <a href="#top"><button id="previous" ng-click="previousMovie(); fadeIn();" ng-disabled="finishedListPrev">Prev.</button></a>
+            <a href="#top"><button id="next" ng-click="nextMovie(); fadeIn();" ng-disabled="finishedListNext">Next</button></a>
+        </div>
+  </div>
+
   <div class="movie-cover animated columns small-12 medium-6" animate-enter="movieAnimateIn">
             <img ng-src="{{poster}}" />
             <img ng-src="{{posterNext}}" class="poster-next"  />  
@@ -7,8 +15,9 @@
   <!-- /main movie image -->
 
   <!-- movie info area -->
-  <div class="columns small-12 medium-6">
+  <div class="columns small-12 medium-6 float-right">
     <div class="movie-info">
+
         <h2>{{title}}</h2>
         <div class="info-text border overflow dark-background">
             <div class="columns small-6">
@@ -42,11 +51,6 @@
               <h4><a href="http://www.amazon.com/s/url=search-alias%3Ddvd&field-keywords={{title}}">Watch on Amazon</a></h4>
           </div>
           
-        </div>
-
-        <div class="navigation-buttons">  
-            <a href="#top"><button id="previous" ng-click="previousMovie(); fadeIn();" ng-disabled="finishedListPrev">Prev.</button></a>
-            <a href="#top"><button id="next" ng-click="nextMovie(); fadeIn();" ng-disabled="finishedListNext">Next</button></a>
         </div>
 
     </div>
