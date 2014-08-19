@@ -23,13 +23,13 @@ var stars = function(stars) {
 	}
 
 	if(window.innerWidth >= 1024) {
-		starScreen = 0.50;
+		starScreen = 0.4;
 	}
 	else {
 		starScreen = 0.35;
 	}
+	console.log(avg);
 	starWidth = Math.floor((Math.floor((avg % 1) * 100)) * starScreen) + "px";
-
 	return {avg:avg, starArray:starArray, starWidth:starWidth};
 }
 
