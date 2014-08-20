@@ -1,5 +1,11 @@
 var wfServices = angular.module('services', []);
 
+//services fade icon function
+var progressIcon = function(stage, entrance) {
+    var icon = document.getElementById("loading-icons");
+    icon.className = stage + " animated fade" + entrance + "Up"
+}
+
 //location service
 wfServices.factory('locationService', function($http, $q, ngProgress) {
 	return {

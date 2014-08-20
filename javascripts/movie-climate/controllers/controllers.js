@@ -65,6 +65,12 @@ wfController.controller("mainController", function($http, $q, $scope, ngProgress
                     var sideNav = document.getElementById('side-nav');
                     $(sideNav).css({'opacity':1});
 
+                    //fades out ngProgress container
+                    var progressFade = function() {
+                        var ngProgress = document.getElementById("ngProgress-container");
+                        ngProgress.className = "animated fadeOut loading-done";
+                    };
+
                     $scope.getSingleMovie();
                     ngProgress.complete(progressFade());
                     setTimeout(function(){$scope.done = false;},250);

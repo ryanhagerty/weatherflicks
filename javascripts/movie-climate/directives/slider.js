@@ -46,6 +46,39 @@ wfSlider.directive('wfSlider', ['singleMovieService', function() {
 						$scope.poster = "../images/imgNotAvailable.jpg";
 					}
 					
+					/* ---- movie average functions - converts to five star system ---- */
+					var movieAvg = function(rating) {
+						number = (rating / 2);
+						return Math.round( number * 10 ) / 10;
+					};
+
+					var stars = function(stars) {
+						var avg,
+							starArray = [],
+							starScreen,
+							starWidth;
+						if(stars == 0) {
+							avg = "Not yet rated";
+							$('.star-background').css({'display':'none'});
+						}
+						else {
+							for(var i=0; i<=stars; i++) {
+								starArray.push(i);
+								avg = stars;
+							}
+						}
+
+						if(window.innerWidth >= 1024) {
+							starScreen = 0.4;
+						}
+						else {
+							starScreen = 0.35;
+						}
+						starWidth = Math.floor((Math.floor((avg % 1) * 100)) * starScreen) + "px";
+						return {avg:avg, starArray:starArray, starWidth:starWidth};
+					}
+					/* ---- /movie average ---- */
+
 					//vote average
 					var rating = stars(movieAvg(vote_average));
 					$scope.avg = rating.avg + " / 5";
