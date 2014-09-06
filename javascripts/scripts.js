@@ -17,11 +17,7 @@
     		var snCL = sideNav.classList;
     		if (cl.contains('open')) {
     			cl.remove('open');
-    			setTimeout(function() {
-    				snCL.remove('layer');
-    			}, 500);
     		} else {
-    			snCL.add('layer');
     			cl.add('open');
     		}
     	};

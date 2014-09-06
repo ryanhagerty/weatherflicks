@@ -8089,35 +8089,35 @@ h2 {
   }
 }
 
-/* line 29, ../scss/layout/weather-flicks.scss */
+/* line 32, ../scss/layout/weather-flicks.scss */
 h3 {
   font-size: 18px;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 29, ../scss/layout/weather-flicks.scss */
+  /* line 32, ../scss/layout/weather-flicks.scss */
   h3 {
     font-size: 21px;
   }
 }
 
-/* line 35, ../scss/layout/weather-flicks.scss */
+/* line 41, ../scss/layout/weather-flicks.scss */
 h4 {
   margin: 0;
   font-size: 18px;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 35, ../scss/layout/weather-flicks.scss */
+  /* line 41, ../scss/layout/weather-flicks.scss */
   h4 {
     font-size: 21px;
   }
 }
 
-/* line 43, ../scss/layout/weather-flicks.scss */
+/* line 51, ../scss/layout/weather-flicks.scss */
 a {
   text-decoration: underline;
 }
 
-/* line 47, ../scss/layout/weather-flicks.scss */
+/* line 55, ../scss/layout/weather-flicks.scss */
 button {
   position: relative;
   left: 4px;
@@ -8128,37 +8128,37 @@ button {
   text-transform: uppercase;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 47, ../scss/layout/weather-flicks.scss */
+  /* line 55, ../scss/layout/weather-flicks.scss */
   button {
     margin-bottom: 0;
   }
 }
 
-/* line 59, ../scss/layout/weather-flicks.scss */
+/* line 70, ../scss/layout/weather-flicks.scss */
 button:focus {
   background: #008cba;
   border-color: #b8b8b8;
   outline: none;
 }
 
-/* line 64, ../scss/layout/weather-flicks.scss */
+/* line 76, ../scss/layout/weather-flicks.scss */
 button:hover {
   background: #007095;
 }
 
-/* line 68, ../scss/layout/weather-flicks.scss */
+/* line 80, ../scss/layout/weather-flicks.scss */
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none !important;
 }
 
 /* ---- /elements ---- */
 /* ---- background & containers ---- */
-/* line 74, ../scss/layout/weather-flicks.scss */
+/* line 86, ../scss/layout/weather-flicks.scss */
 .background-container {
   position: relative;
 }
 
-/* line 78, ../scss/layout/weather-flicks.scss */
+/* line 90, ../scss/layout/weather-flicks.scss */
 .background-image {
   position: fixed;
   z-index: -1;
@@ -8167,7 +8167,7 @@ button:hover {
   width: 200%;
   height: 200%;
 }
-/* line 84, ../scss/layout/weather-flicks.scss */
+/* line 96, ../scss/layout/weather-flicks.scss */
 .background-image img {
   position: absolute;
   top: 0;
@@ -8179,7 +8179,7 @@ button:hover {
   min-height: 50%;
 }
 
-/* line 92, ../scss/layout/weather-flicks.scss */
+/* line 105, ../scss/layout/weather-flicks.scss */
 .fullscreen {
   position: absolute;
   width: 100%;
@@ -8193,7 +8193,7 @@ button:hover {
   background-size: cover;
 }
 
-/* line 103, ../scss/layout/weather-flicks.scss */
+/* line 116, ../scss/layout/weather-flicks.scss */
 main {
   position: relative;
   display: block;
@@ -8201,7 +8201,7 @@ main {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* line 111, ../scss/layout/weather-flicks.scss */
+/* line 124, ../scss/layout/weather-flicks.scss */
 .z-index-container {
   position: relative;
   z-index: 2;
@@ -8210,14 +8210,14 @@ main {
 
 /* ---- /background & containers ---- */
 /* ---- loading ---- */
-/* line 120, ../scss/layout/weather-flicks.scss */
+/* line 132, ../scss/layout/weather-flicks.scss */
 .loading-container {
   position: absolute;
   top: 25%;
   left: 50%;
   z-index: 26;
 }
-/* line 124, ../scss/layout/weather-flicks.scss */
+/* line 137, ../scss/layout/weather-flicks.scss */
 .loading-container p {
   position: relative;
   left: -50%;
@@ -8227,34 +8227,34 @@ main {
   text-align: center;
 }
 
-/* line 134, ../scss/layout/weather-flicks.scss */
+/* line 148, ../scss/layout/weather-flicks.scss */
 #loading-icons {
   position: relative;
   left: -16.5%;
 }
 
-/* line 140, ../scss/layout/weather-flicks.scss */
+/* line 154, ../scss/layout/weather-flicks.scss */
 .location {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik01MCwxMC40MTdjLTE1LjU4MSwwLTI4LjIwMSwxMi42MjctMjguMjAxLDI4LjIwMWMwLDYuMzI3LDIuMDgzLDEyLjE2OCw1LjYwMiwxNi44NzNMNDUuNDksODYuODIzDQoJCWMwLjEwNSwwLjIwMiwwLjIxLDAuNDAzLDAuMzM5LDAuNTg4bDAuMDQsMC4wNjlsMC4wMTEtMC4wMDZjMC45MjQsMS4yNzcsMi40MTEsMi4xMSw0LjEzNSwyLjExYzEuNTU1LDAsMi45MTItMC43MDgsMy44NDQtMS43OTkNCgkJbDAuMDQ4LDAuMDI2bDAuMTc5LTAuMzFjMC4yNjQtMC4zNTYsMC40OTgtMC43MzUsMC42NjctMS4xNTVMNzIuNDc1LDU1LjY1YzMuNTkyLTQuNzMzLDUuNzI3LTEwLjYzMiw1LjcyNy0xNy4wMzINCgkJQzc4LjIwMSwyMy4wNDQsNjUuNTgxLDEwLjQxNyw1MCwxMC40MTd6IE00OS43MjEsNTIuOTE1Yy03LjY3NywwLTEzLjg5NS02LjIyMS0xMy44OTUtMTMuODk1YzAtNy42NzMsNi4yMTgtMTMuODk1LDEzLjg5NS0xMy44OTUNCgkJczEzLjg5NSw2LjIyMiwxMy44OTUsMTMuODk1UzU3LjM5OCw1Mi45MTUsNDkuNzIxLDUyLjkxNXoiLz4NCjwvZz4NCjwvc3ZnPg0K);
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-size: 64px 64px;
   width: 64px;
   height: 64px;
 }
 
-/* line 147, ../scss/layout/weather-flicks.scss */
+/* line 161, ../scss/layout/weather-flicks.scss */
 .weather {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik03OS40MzgsNDcuMzQ5Yy0zLjUxMS0xMi45ODItMTQuNDY1LTIyLjA4My0yNy4xMzUtMjIuMDgzYy04LjgzNSwwLTE3LjA2NSw0LjQ1NC0yMi40MTQsMTIuMDE4DQoJCWMtMS40ODUtMC4zMzktMi45ODctMC41MTQtNC41MDEtMC41MTRjLTExLjg4OSwwLTIxLjU2MywxMC41MzktMjEuNTYzLDIzLjQ5OGMwLDQuNjQ3LDEuMjUxLDkuMTQ4LDMuNjEyLDEzLjAxOQ0KCQljMC41NTUsMC45MDUsMS40OSwxLjQ0OCwyLjQ5LDEuNDQ4aDgwLjg0MWMwLjk0NiwwLDEuODM2LTAuNDg0LDIuNDAyLTEuMzE0YzEuOTY0LTIuODc2LDMuMDA0LTYuMjU1LDMuMDA0LTkuNzY4DQoJCUM5Ni4xNzUsNTMuOTk1LDg4LjM1OSw0Ni4xOCw3OS40MzgsNDcuMzQ5eiIvPg0KPC9nPg0KPC9zdmc+DQo=);
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-size: 64px 64px;
   width: 64px;
   height: 64px;
 }
 
-/* line 154, ../scss/layout/weather-flicks.scss */
+/* line 168, ../scss/layout/weather-flicks.scss */
 .movie {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik05OS40ODIsMzMuNjQyYy0wLjAyOC0wLjAyOS0wLjA2My0wLjA1LTAuMDk0LTAuMDc3bC0xMi4yMy0xMi4yMzhjLTIuMzc5LDEuNTktNS42MjMsMS4zMzYtNy43MjMtMC43NjMNCgkJYy0yLjEtMi4xLTIuMzUzLTUuMzQ3LTAuNzYxLTcuNzI1TDY2LjM1NywwLjUxNmMtMC42ODgtMC42ODgtMS44MDUtMC42ODctMi40OTMsMGwwLDBMMC41Miw2My44NjINCgkJYy0wLjAwMSwwLjAwMS0wLjAwMiwwLjAwMi0wLjAwMywwLjAwM2MtMC42ODksMC42ODgtMC42ODksMS44MDUsMCwyLjQ5NGgwLjAwMWwwLDBsMTIuMzI1LDEyLjMxMw0KCQljMi4zNzctMS41OSw1LjYyMy0xLjMzNiw3LjcyMiwwLjc2M2MyLjA5OCwyLjA5OSwyLjM1Myw1LjM0LDAuNzY3LDcuNzE5bDEyLjE2NiwxMi4xNTRjMC4wNDYsMC4wNiwwLjA4OSwwLjEyMSwwLjE0NCwwLjE3Ng0KCQljMC42ODksMC42ODgsMS44MDQsMC42ODgsMi40OTMsMGgwLjAwMWw2My4zNDctNjMuMzQ5bDAsMEMxMDAuMTcyLDM1LjQ0NiwxMDAuMTcyLDM0LjMzLDk5LjQ4MiwzMy42NDJ6IE04NS41MTgsMzYuMTM1DQoJCUwzNi4xMzYsODUuNTE4bDAsMGwwLDBjLTAuNjg5LDAuNjg5LTEuODA0LDAuNjg5LTIuNDkzLDBsMCwwbDAsMGwtMTkuMTU5LTE5LjE2bDAsMGMtMC42ODktMC42ODgtMC42ODktMS44MDQsMC0yLjQ5MmwwLDANCgkJbDQ5LjM4MS00OS4zODJsMCwwYzAuNjg5LTAuNjg4LDEuODA1LTAuNjg4LDIuNDkyLDBsMCwwbDE5LjE2LDE5LjE2MUM4Ni4yMDcsMzQuMzMxLDg2LjIwNywzNS40NDcsODUuNTE4LDM2LjEzNXoiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNjEuOTIzLDUxLjUyMWwtNi44MjEtMy4yNmwwLjgzLTcuMTM0YzAuMDI1LTAuMjE2LTAuMDktMC40MjUtMC4yODUtMC41Mg0KCQljLTAuMTk1LTAuMDk0LTAuNDMxLTAuMDU1LTAuNTg2LDAuMDk5bC01LjA5Nyw1LjA5OGwtNi42NTMtMy4xNzhjLTAuMTk2LTAuMDk0LTAuNDI5LTAuMDU0LTAuNTgzLDAuMDk5DQoJCWMtMC4xNTQsMC4xNTItMC4xOTMsMC4zODYtMC4xLDAuNTgybDMuMTc5LDYuNjU1bC01LjA5OCw1LjA5NmMtMC4xNTQsMC4xNTMtMC4xOTMsMC4zOS0wLjA5OSwwLjU4Ng0KCQljMC4wOTUsMC4xOTUsMC4zMDQsMC4zMSwwLjUyLDAuMjg0bDcuMTMyLTAuODI5bDMuMjU5LDYuODIyYzAuMDk0LDAuMTk0LDAuMjk5LDAuMzA5LDAuNTE0LDAuMjg4czAuMzk1LTAuMTc2LDAuNDQ1LTAuMzg2DQoJCWwxLjg3MS03LjQ3N2w3LjQ3OC0xLjg3MWMwLjA5MS0wLjAyMiwwLjE3My0wLjA3LDAuMjM3LTAuMTM1YzAuMDgyLTAuMDgxLDAuMTM2LTAuMTkxLDAuMTQ4LTAuMzExDQoJCUM2Mi4yMzQsNTEuODE4LDYyLjExOSw1MS42MTMsNjEuOTIzLDUxLjUyMXoiLz4NCjwvZz4NCjwvc3ZnPg0K);
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-size: 64px 64px;
   width: 64px;
   height: 64px;
@@ -8262,63 +8262,67 @@ main {
 
 /* ----- /loading ---- */
 /* ---- weather area ---- */
-/* line 165, ../scss/layout/weather-flicks.scss */
+/* line 177, ../scss/layout/weather-flicks.scss */
 skycon {
   position: absolute;
   z-index: 1;
   opacity: 0.5;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 165, ../scss/layout/weather-flicks.scss */
+  /* line 177, ../scss/layout/weather-flicks.scss */
   skycon {
     right: 0;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 165, ../scss/layout/weather-flicks.scss */
+  /* line 177, ../scss/layout/weather-flicks.scss */
   skycon {
     top: -53px;
     opacity: 0.4;
   }
 }
 
-/* line 178, ../scss/layout/weather-flicks.scss */
+/* line 193, ../scss/layout/weather-flicks.scss */
 .title h1 {
   margin: 0;
   line-height: 2.1;
 }
 
-/* line 183, ../scss/layout/weather-flicks.scss */
+/* line 198, ../scss/layout/weather-flicks.scss */
 .weather-info {
   margin-bottom: 20px;
-  padding-bottom: 8px;
+  padding: 0 15px 8px 15px;
   text-align: center;
 }
-/* line 187, ../scss/layout/weather-flicks.scss */
+/* line 202, ../scss/layout/weather-flicks.scss */
 .weather-info h3, .weather-info h4 {
   margin: 10px 0;
   line-height: 1;
 }
-/* line 192, ../scss/layout/weather-flicks.scss */
+/* line 207, ../scss/layout/weather-flicks.scss */
+.weather-info div.border.dark-background {
+  overflow: auto;
+}
+/* line 211, ../scss/layout/weather-flicks.scss */
 .weather-info skycon {
   left: 50%;
   top: 0px;
 }
-/* line 194, ../scss/layout/weather-flicks.scss */
+/* line 213, ../scss/layout/weather-flicks.scss */
 .weather-info skycon canvas {
   position: relative;
   left: -50%;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 183, ../scss/layout/weather-flicks.scss */
+  /* line 198, ../scss/layout/weather-flicks.scss */
   .weather-info {
     margin-bottom: 40px;
   }
-  /* line 201, ../scss/layout/weather-flicks.scss */
+  /* line 222, ../scss/layout/weather-flicks.scss */
   .weather-info .border-top {
     border-top: none;
   }
-  /* line 206, ../scss/layout/weather-flicks.scss */
+  /* line 227, ../scss/layout/weather-flicks.scss */
   .weather-info .dark-background {
     display: -webkit-flex;
     display: flex;
@@ -8328,157 +8332,188 @@ skycon {
 
 /* ---- /weather area ---- */
 /* ---- movie infomation area ---- */
-/* line 218, ../scss/layout/weather-flicks.scss */
+/* line 240, ../scss/layout/weather-flicks.scss */
 .movie-cover {
   padding: 0 20px;
   text-align: center;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 218, ../scss/layout/weather-flicks.scss */
+  /* line 240, ../scss/layout/weather-flicks.scss */
   .movie-cover {
     float: left;
     min-height: 100px;
     padding: 0 0 0 20px;
   }
-  /* line 226, ../scss/layout/weather-flicks.scss */
+  /* line 249, ../scss/layout/weather-flicks.scss */
   .movie-cover img {
     margin-left: -2px;
     min-width: 60%;
   }
 }
 
-/* line 235, ../scss/layout/weather-flicks.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 259, ../scss/layout/weather-flicks.scss */
+  .movie-text {
+    float: right;
+  }
+}
+
+/* line 268, ../scss/layout/weather-flicks.scss */
 .poster-next {
   display: none;
 }
 
-/* line 241, ../scss/layout/weather-flicks.scss */
+/* line 274, ../scss/layout/weather-flicks.scss */
 .movie-info .columns {
   padding: 10px 20px;
 }
-/* line 244, ../scss/layout/weather-flicks.scss */
+/* line 278, ../scss/layout/weather-flicks.scss */
+.movie-info h2, .movie-info h3 {
+  text-align: center;
+}
+/* line 282, ../scss/layout/weather-flicks.scss */
 .movie-info h2 {
   margin-top: 8px;
   margin-bottom: 15px;
   line-height: 1;
 }
-/* line 248, ../scss/layout/weather-flicks.scss */
+/* line 287, ../scss/layout/weather-flicks.scss */
 .movie-info h3 {
   margin-bottom: 7px;
   line-height: 1.2;
   font-size: 21px;
 }
-/* line 253, ../scss/layout/weather-flicks.scss */
-.movie-info h2, .movie-info h3 {
-  text-align: center;
-}
-/* line 257, ../scss/layout/weather-flicks.scss */
+/* line 293, ../scss/layout/weather-flicks.scss */
 .movie-info ul {
   line-height: 1;
 }
-/* line 259, ../scss/layout/weather-flicks.scss */
+/* line 296, ../scss/layout/weather-flicks.scss */
 .movie-info ul li {
   float: left;
   margin-right: 4px;
   list-style: none;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 267, ../scss/layout/weather-flicks.scss */
+  /* line 305, ../scss/layout/weather-flicks.scss */
   .movie-info h2, .movie-info h3 {
     text-align: left;
   }
-  /* line 270, ../scss/layout/weather-flicks.scss */
+  /* line 309, ../scss/layout/weather-flicks.scss */
   .movie-info .movie-description {
     font-size: 18px;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 275, ../scss/layout/weather-flicks.scss */
+  /* line 317, ../scss/layout/weather-flicks.scss */
   .movie-info .info-text {
     margin: 31px 0 13px 0;
   }
-  /* line 278, ../scss/layout/weather-flicks.scss */
+  /* line 321, ../scss/layout/weather-flicks.scss */
   .movie-info .movie-description {
     margin: 18px 0;
     font-size: 21px;
   }
-  /* line 282, ../scss/layout/weather-flicks.scss */
+  /* line 326, ../scss/layout/weather-flicks.scss */
   .movie-info h2 {
     margin-top: -19px;
   }
-  /* line 285, ../scss/layout/weather-flicks.scss */
+  /* line 330, ../scss/layout/weather-flicks.scss */
   .movie-info h3 {
     margin-top: 100px;
     font-size: 29px;
   }
-  /* line 289, ../scss/layout/weather-flicks.scss */
+  /* line 335, ../scss/layout/weather-flicks.scss */
   .movie-info h4 {
     font-size: 18px;
   }
-  /* line 292, ../scss/layout/weather-flicks.scss */
+  /* line 339, ../scss/layout/weather-flicks.scss */
   .movie-info button {
     font-size: 18px;
   }
 }
 
-/* line 298, ../scss/layout/weather-flicks.scss */
+/* line 347, ../scss/layout/weather-flicks.scss */
 .info-text {
   line-height: 2;
+  overflow: auto;
   text-align: center;
 }
-/* line 301, ../scss/layout/weather-flicks.scss */
+/* line 352, ../scss/layout/weather-flicks.scss */
 .info-text .columns {
   padding: 10px;
 }
-/* line 304, ../scss/layout/weather-flicks.scss */
+/* line 356, ../scss/layout/weather-flicks.scss */
 .info-text i {
   line-height: 1;
   font-size: 32px;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 304, ../scss/layout/weather-flicks.scss */
+  /* line 356, ../scss/layout/weather-flicks.scss */
   .info-text i {
     font-size: 36px;
   }
 }
-/* line 312, ../scss/layout/weather-flicks.scss */
+/* line 366, ../scss/layout/weather-flicks.scss */
 .info-text i, .info-text p {
   display: inline-block;
 }
-/* line 315, ../scss/layout/weather-flicks.scss */
+/* line 370, ../scss/layout/weather-flicks.scss */
 .info-text p {
   margin: 0 0 0 10px;
   font-size: 18px;
 }
-/* line 322, ../scss/layout/weather-flicks.scss */
+/* line 375, ../scss/layout/weather-flicks.scss */
 .info-text:last-child {
   margin-bottom: 20px;
 }
 
-/* line 327, ../scss/layout/weather-flicks.scss */
+/* line 380, ../scss/layout/weather-flicks.scss */
+.runtime p {
+  line-height: 1.1;
+}
+
+@media only screen and (min-width: 64.063em) {
+  /* line 385, ../scss/layout/weather-flicks.scss */
+  .navigation-buttons {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 394, ../scss/layout/weather-flicks.scss */
+.fadeInUp, .fadeIn {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 399, ../scss/layout/weather-flicks.scss */
+wf-slider .fadeInStart-add, .fadeInStart1-add {
+  opacity: 0;
+}
+
+/* ---- movie rating area ---- */
+/* line 404, ../scss/layout/weather-flicks.scss */
 .rating, .star-background {
   width: 200px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 327, ../scss/layout/weather-flicks.scss */
+  /* line 404, ../scss/layout/weather-flicks.scss */
   .rating, .star-background {
     width: auto;
   }
-  /* line 332, ../scss/layout/weather-flicks.scss */
+  /* line 411, ../scss/layout/weather-flicks.scss */
   .rating i, .star-background i {
     font-size: 48px;
   }
 }
 
-/* line 338, ../scss/layout/weather-flicks.scss */
+/* line 419, ../scss/layout/weather-flicks.scss */
 .average {
   position: absolute;
   margin: 15px 0 0 205px;
   font-size: 19px;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 338, ../scss/layout/weather-flicks.scss */
+  /* line 419, ../scss/layout/weather-flicks.scss */
   .average {
     margin: 0px 0 0 240px;
     padding: 15px 0;
@@ -8487,14 +8522,14 @@ skycon {
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 348, ../scss/layout/weather-flicks.scss */
+  /* line 431, ../scss/layout/weather-flicks.scss */
   .rating {
     position: relative;
     left: -20px;
   }
 }
 
-/* line 355, ../scss/layout/weather-flicks.scss */
+/* line 440, ../scss/layout/weather-flicks.scss */
 ul.star-background {
   position: absolute;
   left: 50%;
@@ -8502,37 +8537,17 @@ ul.star-background {
   color: rgba(255, 255, 255, 0.2);
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 355, ../scss/layout/weather-flicks.scss */
+  /* line 440, ../scss/layout/weather-flicks.scss */
   ul.star-background {
     left: 0;
     margin-left: 0;
   }
 }
 
-/* line 366, ../scss/layout/weather-flicks.scss */
-.runtime p {
-  line-height: 1.1;
-}
-
-@media only screen and (min-width: 64.063em) {
-  /* line 372, ../scss/layout/weather-flicks.scss */
-  .navigation-buttons {
-    margin-bottom: 20px;
-  }
-}
-/* line 378, ../scss/layout/weather-flicks.scss */
-.fadeInUp, .fadeIn {
-  -webkit-transform: translate3d(0, 0, 0);
-}
-
-/* line 382, ../scss/layout/weather-flicks.scss */
-wf-slider .fadeInStart-add, .fadeInStart1-add {
-  opacity: 0;
-}
-
+/* ---- /movie rating area ---- */
 /* ---- /movie information area ---- */
 /* ---- off canvas nav/info area ---- */
-/* line 390, ../scss/layout/weather-flicks.scss */
+/* line 458, ../scss/layout/weather-flicks.scss */
 #site {
   position: relative;
   z-index: 10;
@@ -8548,7 +8563,7 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 405, ../scss/layout/weather-flicks.scss */
+/* line 473, ../scss/layout/weather-flicks.scss */
 #site:before {
   position: absolute;
   left: -4px;
@@ -8557,7 +8572,7 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
   background: #3B3E3E;
   content: '';
 }
-/* line 412, ../scss/layout/weather-flicks.scss */
+/* line 480, ../scss/layout/weather-flicks.scss */
 #site.open {
   -webkit-transform: translate3d(-250px, 0, 0);
   -moz-transform: translate3d(-250px, 0, 0);
@@ -8565,13 +8580,13 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
   transform: translate3d(-250px, 0, 0);
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 390, ../scss/layout/weather-flicks.scss */
+  /* line 458, ../scss/layout/weather-flicks.scss */
   #site {
     height: 100%;
   }
 }
 
-/* line 423, ../scss/layout/weather-flicks.scss */
+/* line 493, ../scss/layout/weather-flicks.scss */
 #offcanvas-menu-button {
   position: relative;
   display: inline-block;
@@ -8585,7 +8600,7 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
   border: 1px solid transparent;
   cursor: pointer;
 }
-/* line 433, ../scss/layout/weather-flicks.scss */
+/* line 503, ../scss/layout/weather-flicks.scss */
 #offcanvas-menu-button span {
   position: absolute;
   display: block;
@@ -8597,7 +8612,8 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
   box-shadow: 0 10px 0 1px #ffffff, 0 16px 0 1px #ffffff, 0 22px 0 1px #ffffff;
 }
 
-/* line 444, ../scss/layout/weather-flicks.scss */
+/* ---- navigation ---- */
+/* line 515, ../scss/layout/weather-flicks.scss */
 #side-nav {
   position: absolute;
   width: 100%;
@@ -8605,46 +8621,40 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
   opacity: 0;
   background: #000000;
 }
-/* line 450, ../scss/layout/weather-flicks.scss */
+/* line 521, ../scss/layout/weather-flicks.scss */
 #side-nav .inner-wrap {
   float: right;
   padding: 0 20px;
   width: 250px;
 }
-/* line 454, ../scss/layout/weather-flicks.scss */
+/* line 526, ../scss/layout/weather-flicks.scss */
 #side-nav .inner-wrap h3 {
   padding-bottom: 8px;
   font-size: 27px;
   text-align: center;
   border-bottom: 1px solid #ffffff;
 }
-/* line 462, ../scss/layout/weather-flicks.scss */
+/* line 535, ../scss/layout/weather-flicks.scss */
 #side-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 467, ../scss/layout/weather-flicks.scss */
-#side-nav li a {
-  display: block;
-  margin-bottom: 15px;
-  padding: 12px 0 0 0;
-  color: #ffffff;
-}
-/* line 472, ../scss/layout/weather-flicks.scss */
-#side-nav .social {
+/* line 540, ../scss/layout/weather-flicks.scss */
+#side-nav .fi-social-twitter + a {
   margin-right: 10px;
 }
-/* line 475, ../scss/layout/weather-flicks.scss */
+/* line 544, ../scss/layout/weather-flicks.scss */
 #side-nav i {
   margin-right: 5px;
   font-size: 16px;
   color: #008cba;
 }
 
+/* ---- /navigation ---- */
 /* ---- /off canvas nav/info area ---- */
 /* ---- transitions ---- */
-/* line 486, ../scss/layout/weather-flicks.scss */
+/* line 555, ../scss/layout/weather-flicks.scss */
 .startAnimate {
   -webkit-transition: 1s linear;
   -moz-transition: 1s linear;
@@ -8652,41 +8662,41 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
   transition: 1s linear;
 }
 
-/* line 493, ../scss/layout/weather-flicks.scss */
+/* line 562, ../scss/layout/weather-flicks.scss */
 .fadeInStart {
   opacity: 0;
 }
 
-/* line 497, ../scss/layout/weather-flicks.scss */
+/* line 566, ../scss/layout/weather-flicks.scss */
 .fadeIn {
   opacity: 1;
 }
 
 /* ---- /transitions ---- */
 /* ---- icons ---- */
-/* line 504, ../scss/layout/weather-flicks.scss */
+/* line 572, ../scss/layout/weather-flicks.scss */
 i {
   font-size: 42px;
 }
 
-/* line 508, ../scss/layout/weather-flicks.scss */
+/* line 576, ../scss/layout/weather-flicks.scss */
 .last {
   position: relative;
   overflow: hidden;
 }
-/* line 511, ../scss/layout/weather-flicks.scss */
+/* line 580, ../scss/layout/weather-flicks.scss */
 .last i {
   display: block;
 }
 
 /* ---- /icons ---- */
 /* ---- less than/equal IE9 sad message :_( ---- */
-/* line 519, ../scss/layout/weather-flicks.scss */
+/* line 589, ../scss/layout/weather-flicks.scss */
 .hidden, .lte-ie9 #ngProgress-container {
   display: none;
 }
 
-/* line 523, ../scss/layout/weather-flicks.scss */
+/* line 593, ../scss/layout/weather-flicks.scss */
 .lte-ie9 .hidden {
   position: relative;
   display: block;
@@ -8694,23 +8704,24 @@ i {
   padding: 30px 0;
   z-index: 50;
 }
-/* line 529, ../scss/layout/weather-flicks.scss */
+/* line 600, ../scss/layout/weather-flicks.scss */
 .lte-ie9 .hidden > div {
   float: none;
   margin: 0 auto;
 }
 
-/* line 3, ../scss/layout/reusable.scss */
+/* ---- /less than/equal IE9 sad message :_( ---- */
+/* line 2, ../scss/layout/reusable.scss */
 .border {
   border: 1px solid #808080;
 }
 
-/* line 7, ../scss/layout/reusable.scss */
+/* line 6, ../scss/layout/reusable.scss */
 .border-top {
   border-top: 1px solid #808080;
 }
 
-/* line 11, ../scss/layout/reusable.scss */
+/* line 10, ../scss/layout/reusable.scss */
 .border-right {
   border-right: 1px solid #808080;
 }
@@ -8725,48 +8736,27 @@ i {
   }
 }
 
-/* line 21, ../scss/layout/reusable.scss */
+/* line 24, ../scss/layout/reusable.scss */
 .border-bottom {
   border-bottom: 1px solid #808080;
 }
 
-/* line 25, ../scss/layout/reusable.scss */
+/* line 28, ../scss/layout/reusable.scss */
 .border-left {
   border-left: 1px solid #808080;
 }
 
-/* line 29, ../scss/layout/reusable.scss */
+/* line 32, ../scss/layout/reusable.scss */
 .dark-background {
   background: rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (min-width: 40.063em) {
-  /* line 34, ../scss/layout/reusable.scss */
-  .float-right {
-    float: right;
-  }
-}
-/* line 39, ../scss/layout/reusable.scss */
+/* line 36, ../scss/layout/reusable.scss */
 .loading, .show {
   display: block;
 }
 
-/* line 43, ../scss/layout/reusable.scss */
+/* line 40, ../scss/layout/reusable.scss */
 .loading-done, .hide {
   display: none;
-}
-
-/* line 47, ../scss/layout/reusable.scss */
-.mobile-padding {
-  padding: 0 15px;
-}
-
-/* line 51, ../scss/layout/reusable.scss */
-.no-padding {
-  padding: 0;
-}
-
-/* line 55, ../scss/layout/reusable.scss */
-.overflow {
-  overflow: auto;
 }

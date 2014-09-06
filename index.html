@@ -1,26 +1,31 @@
 <!doctype html>
 <!--[if lte IE 9]><html class="lte-ie9" lang="en" > <![endif]-->
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Flicks - Where your weather decides what you should watch.</title>
     <meta name="description" content="Let your local weather decide what movie you should watch.">
     <link rel="shortcut icon" href="images/favs/clear-day.png" id="fav" />
+
     <!-- css -->
-    <link rel="stylesheet" href="stylesheets/app-clean.css">
+    <link rel="stylesheet" href="stylesheets/app.css">
     <link rel="stylesheet" href="stylesheets/ngProgress.css">
+    <link rel="stylesheet" href="stylesheets/foundation-icons.css" />
+    <link rel="stylesheet" href="stylesheets/animate.css">
     <!-- /css -->
+
   </head>
 
   <body ng-app="movieClimate" ng-controller="mainController" id="body">
+
     <!-- old IE notice -->
     <div class="hidden row">
-    <div class="columns large-6">
-      <h3>Woah, there! You're using an older version of Internet Explorer.</h3>
-      <p>Unfortunately, this site utilizes some newer technology which older versions of Internet Explorer are unable to understand.</p>
-      <h4>May I suggest <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla's Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/">Google's Chrome</a> instead?</h4> 
-    </div>
+      <div class="columns large-6">
+        <h3>Woah, there! You're using an older version of Internet Explorer.</h3>
+        <p>Unfortunately, this site utilizes some newer technology which older versions of Internet Explorer are unable to understand.</p>
+        <h4>May I suggest <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla's Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/">Google's Chrome</a> instead?</h4> 
+      </div>
     </div>
     <!-- /old IE notice -->
 
@@ -37,62 +42,63 @@
         <h3>Weatherflicks</h3>
         <p>Weatherflicks generates movie recommendations based on your local weather.</p>
         <p>Foggy? Mysteries and suspense. Sunny? Comedies and animation.</p>
-
         <p>This site was built using AngularJS, CSS3 and HTML5. It's version two.</p>
-        <p><i class="fi-social-twitter"></i><a href="http://www.twitter.com/hotpizzas" class="social">My Twitter</a>
+        <p><i class="fi-social-twitter"></i><a href="http://www.twitter.com/hotpizzas">My Twitter</a>
         <i class="fi-html5"></i><a href="http://www.ryanhagerty.com">My Site</a></p>
         <p>Here's some awesome APIs: <a href="http://forecast.io/">Forecast.io</a> and <a href="https://www.themoviedb.org/">themoviedb</a>. 
       </div>
     </div>
     <!-- /side-nav/info area -->
 
-<!-- #site -->
-<div id="site">
-  <div class="fullscreen background animated-slow" back-img="{{background}}" ng-cloak animate-enter-front="movieAnimateIn"></div>
-  <skycon icon="CurrentWeather.forecast.icon" color="white" size="400" class="hide-for-small-down hide-for-large-up"></skycon>
-  <skycon icon="CurrentWeather.forecast.icon" color="white" size="1000" class="hide-for-medium-down"></skycon>
+    <!-- #site -->
+    <div id="site">
+      <div class="fullscreen background animated-slow" back-img="{{background}}" ng-cloak animate-enter-front="movieAnimateIn"></div>
+      <skycon icon="CurrentWeather.forecast.icon" color="white" size="400" class="hide-for-small-down hide-for-large-up"></skycon>
+      <skycon icon="CurrentWeather.forecast.icon" color="white" size="1000" class="hide-for-medium-down"></skycon>
+      <main id="top">
 
-  <main id="top">
-    <!-- z-index container -->
-    <div class="z-index-container">
+        <!-- z-index container -->
+        <div class="z-index-container">
 
-      <!-- title & navigation button -->
-      <div class="row">
-        <div class="small-9 columns title">
-          <h1>Weatherflicks</h1>
-        </div>
-        <div class="small-3 columns">
-          <button id="offcanvas-menu-button">
-            <span></span>
-          </button>
-        </div>
-      </div>
-      <!-- /title & navigation button -->
-
-      <!-- weather & location -->
-      <div class="row weather-info mobile-padding" ng-cloak>           
-        <skycon icon="CurrentWeather.forecast.icon" color="white" size="130" class="hide-for-medium-up"></skycon>
-        <div class="border overflow dark-background">
-          <div class="columns small-6 medium-4">
-            <h3>{{temperature}}</h3>
+          <!-- title & navigation button -->
+          <div class="row">
+            <div class="small-9 columns title">
+              <h1>Weatherflicks</h1>
+            </div>
+            <div class="small-3 columns">
+              <button id="offcanvas-menu-button">
+                <span></span>
+              </button>
+            </div>
           </div>
-          <div class="columns small-6 medium-4 border-left border-right">
-            <h3>{{condition}}</h3>
-          </div>
-          <div class="columns small-12 medium-4 border-top">
-            <h4>{{place}}</h4> 
-          </div>
-        </div>
-      </div>
-      <!-- /weather & location -->
+          <!-- /title & navigation button -->
 
-      <wf-slider></wf-slider>
+          <!-- weather & location -->
+          <div class="row weather-info mobile-padding" ng-cloak>           
+            <skycon icon="CurrentWeather.forecast.icon" color="white" size="130" class="hide-for-medium-up"></skycon>
+            <div class="border dark-background">
+              <div class="columns small-6 medium-4">
+                <h3>{{temperature}}</h3>
+              </div>
+              <div class="columns small-6 medium-4 border-left border-right">
+                <h3>{{condition}}</h3>
+              </div>
+              <div class="columns small-12 medium-4 border-top">
+                <h4>{{place}}</h4> 
+              </div>
+            </div>
+          </div>
+          <!-- /weather & location -->
 
-    </div>  
-    <!-- /.z-index-container -->
-  </main>
-</div>
-<!-- /#site -->
+          <!-- weatherflicks slider template -->
+          <wf-slider></wf-slider>
+          <!-- /weatherflicks slider template -->
+        </div>  
+        <!-- /.z-index-container -->
+
+      </main>
+    </div>
+    <!-- /#site -->
 
     <!--javascripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -110,8 +116,8 @@
     <script src="javascripts/movie-climate/directives/slider.js"></script>
     <script src="javascripts/movie-climate/app-dir.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
-    <!-- /javascripts -->
-  
+    <!-- /javascripts --> 
+
     <!-- typekit -->
     <script type="text/javascript" src="//use.typekit.net/dfd8jna.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>

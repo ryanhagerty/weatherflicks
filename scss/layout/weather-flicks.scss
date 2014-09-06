@@ -1,43 +1,51 @@
 /* ---- elements ---- */
 html, body {
-    height:100%;
-    min-height:100%;
+    height: 100%;
+    min-height: 100%;
 }
 
 body {
   padding: 0; margin: 0;
-  background:#000000;
-  color:#ffffff;
+  background: #000000;
+  color: #ffffff;
   font-family: "omnes-pro",sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-  color:#ffffff;
+  color: #ffffff;
   font-family: "omnes-pro",sans-serif;
 }
 
 h1 {
-  font-size:21px;
+  font-size: 21px;
 }
 
 h2 {
-  font-size:36px;
+  font-size: 36px;
+
   @media #{$large} {
     font-size: 64px;
   }
+
 }
+
 h3 {
-  font-size:18px;
+  font-size: 18px;
+
   @media #{$medium} {
-    font-size:21px;
+    font-size: 21px;
   }
+
 }
+
 h4 {
   margin: 0;
-  font-size:18px;
+  font-size: 18px;
+
   @media #{$medium} {
-    font-size:21px;
+    font-size: 21px;
   }
+
 }
 
 a {
@@ -45,24 +53,28 @@ a {
 }
 
 button {
-    position:relative;
-    left: 4px;
-    margin-left:-4px;
-    width:50%;
-    border:1px solid #b8b8b8;
-    font-family: "omnes-pro",sans-serif;
-    text-transform: uppercase;
-    @media #{$medium-only} {
-      margin-bottom: 0;
-    }
+  position: relative;
+  left: 4px;
+  margin-left: -4px;
+  width: 50%;
+  border: 1px solid #b8b8b8;
+  font-family: "omnes-pro",sans-serif;
+  text-transform: uppercase;
+
+  @media #{$medium-only} {
+    margin-bottom: 0;
   }
+
+}
+
 button:focus {
-  background:#008cba;
-  border-color:#b8b8b8;
+  background: #008cba;
+  border-color: #b8b8b8;
   outline: none;
 }
+
 button:hover {
-  background:#007095;
+  background: #007095;
 }
 
 [ng\:cloak], [ng-cloak], .ng-cloak {
@@ -72,28 +84,29 @@ button:hover {
 
 /* ---- background & containers ---- */
 .background-container {
-  position:relative;
+  position: relative;
 }
 
 .background-image {
   position: fixed; 
   z-index: -1;
-  top: -50%; 
-  left: -50%; 
+  top: -50%; left: -50%; 
   width: 200%; height: 200%;
+
   img {
     position: absolute; 
     top: 0; left: 0; right: 0; bottom: 0; 
     margin: auto; 
     min-width: 50%; min-height: 50%;
   }
+
 }
 
 .fullscreen {
-  position:absolute;
-  width:100%; height:100%; min-height:100%;
-  background-color:#444444;
-  background-position:center center;
+  position: absolute;
+  width: 100%; height: 100%; min-height: 100%;
+  background-color: #444444;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -101,34 +114,35 @@ button:hover {
 }
 
 main {
-  position:relative;
+  position: relative;
   display: block;
-  height:100%;
-  background:rgba(0,0,0,0.6);
+  height: 100%;
+  background: rgba(0,0,0,0.6);
 }
 
 //puts skycon above main background and below content
 .z-index-container {
-  position:relative;
+  position: relative;
   z-index: 2;
   height: 100%;
 }
 /* ---- /background & containers ---- */
 
 /* ---- loading ---- */
-
 .loading-container {
-  position:absolute;
-  top:25%; left:50%;
+  position: absolute;
+  top: 25%; left: 50%;
   z-index: 26;
+
   p {
-    position:relative;
+    position: relative;
     left: -50%;
     line-height: 1.2;
-    width:200px;
-    font-size:18px;
+    width: 200px;
+    font-size: 18px;
     text-align: center;
   }
+
 }
 
 #loading-icons {
@@ -139,49 +153,50 @@ main {
 //svg loading icons
 .location {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik01MCwxMC40MTdjLTE1LjU4MSwwLTI4LjIwMSwxMi42MjctMjguMjAxLDI4LjIwMWMwLDYuMzI3LDIuMDgzLDEyLjE2OCw1LjYwMiwxNi44NzNMNDUuNDksODYuODIzDQoJCWMwLjEwNSwwLjIwMiwwLjIxLDAuNDAzLDAuMzM5LDAuNTg4bDAuMDQsMC4wNjlsMC4wMTEtMC4wMDZjMC45MjQsMS4yNzcsMi40MTEsMi4xMSw0LjEzNSwyLjExYzEuNTU1LDAsMi45MTItMC43MDgsMy44NDQtMS43OTkNCgkJbDAuMDQ4LDAuMDI2bDAuMTc5LTAuMzFjMC4yNjQtMC4zNTYsMC40OTgtMC43MzUsMC42NjctMS4xNTVMNzIuNDc1LDU1LjY1YzMuNTkyLTQuNzMzLDUuNzI3LTEwLjYzMiw1LjcyNy0xNy4wMzINCgkJQzc4LjIwMSwyMy4wNDQsNjUuNTgxLDEwLjQxNyw1MCwxMC40MTd6IE00OS43MjEsNTIuOTE1Yy03LjY3NywwLTEzLjg5NS02LjIyMS0xMy44OTUtMTMuODk1YzAtNy42NzMsNi4yMTgtMTMuODk1LDEzLjg5NS0xMy44OTUNCgkJczEzLjg5NSw2LjIyMiwxMy44OTUsMTMuODk1UzU3LjM5OCw1Mi45MTUsNDkuNzIxLDUyLjkxNXoiLz4NCjwvZz4NCjwvc3ZnPg0K);
-  background-repeat:no repeat;
-  background-size:64px 64px;
-  width:64px; height:64px;
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+  width: 64px; height: 64px;
 }
 
 .weather {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik03OS40MzgsNDcuMzQ5Yy0zLjUxMS0xMi45ODItMTQuNDY1LTIyLjA4My0yNy4xMzUtMjIuMDgzYy04LjgzNSwwLTE3LjA2NSw0LjQ1NC0yMi40MTQsMTIuMDE4DQoJCWMtMS40ODUtMC4zMzktMi45ODctMC41MTQtNC41MDEtMC41MTRjLTExLjg4OSwwLTIxLjU2MywxMC41MzktMjEuNTYzLDIzLjQ5OGMwLDQuNjQ3LDEuMjUxLDkuMTQ4LDMuNjEyLDEzLjAxOQ0KCQljMC41NTUsMC45MDUsMS40OSwxLjQ0OCwyLjQ5LDEuNDQ4aDgwLjg0MWMwLjk0NiwwLDEuODM2LTAuNDg0LDIuNDAyLTEuMzE0YzEuOTY0LTIuODc2LDMuMDA0LTYuMjU1LDMuMDA0LTkuNzY4DQoJCUM5Ni4xNzUsNTMuOTk1LDg4LjM1OSw0Ni4xOCw3OS40MzgsNDcuMzQ5eiIvPg0KPC9nPg0KPC9zdmc+DQo=);
-  background-repeat:no repeat;
-  background-size:64px 64px;
-  width:64px; height:64px;
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+  width: 64px; height: 64px;
 }
 
 .movie {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik05OS40ODIsMzMuNjQyYy0wLjAyOC0wLjAyOS0wLjA2My0wLjA1LTAuMDk0LTAuMDc3bC0xMi4yMy0xMi4yMzhjLTIuMzc5LDEuNTktNS42MjMsMS4zMzYtNy43MjMtMC43NjMNCgkJYy0yLjEtMi4xLTIuMzUzLTUuMzQ3LTAuNzYxLTcuNzI1TDY2LjM1NywwLjUxNmMtMC42ODgtMC42ODgtMS44MDUtMC42ODctMi40OTMsMGwwLDBMMC41Miw2My44NjINCgkJYy0wLjAwMSwwLjAwMS0wLjAwMiwwLjAwMi0wLjAwMywwLjAwM2MtMC42ODksMC42ODgtMC42ODksMS44MDUsMCwyLjQ5NGgwLjAwMWwwLDBsMTIuMzI1LDEyLjMxMw0KCQljMi4zNzctMS41OSw1LjYyMy0xLjMzNiw3LjcyMiwwLjc2M2MyLjA5OCwyLjA5OSwyLjM1Myw1LjM0LDAuNzY3LDcuNzE5bDEyLjE2NiwxMi4xNTRjMC4wNDYsMC4wNiwwLjA4OSwwLjEyMSwwLjE0NCwwLjE3Ng0KCQljMC42ODksMC42ODgsMS44MDQsMC42ODgsMi40OTMsMGgwLjAwMWw2My4zNDctNjMuMzQ5bDAsMEMxMDAuMTcyLDM1LjQ0NiwxMDAuMTcyLDM0LjMzLDk5LjQ4MiwzMy42NDJ6IE04NS41MTgsMzYuMTM1DQoJCUwzNi4xMzYsODUuNTE4bDAsMGwwLDBjLTAuNjg5LDAuNjg5LTEuODA0LDAuNjg5LTIuNDkzLDBsMCwwbDAsMGwtMTkuMTU5LTE5LjE2bDAsMGMtMC42ODktMC42ODgtMC42ODktMS44MDQsMC0yLjQ5MmwwLDANCgkJbDQ5LjM4MS00OS4zODJsMCwwYzAuNjg5LTAuNjg4LDEuODA1LTAuNjg4LDIuNDkyLDBsMCwwbDE5LjE2LDE5LjE2MUM4Ni4yMDcsMzQuMzMxLDg2LjIwNywzNS40NDcsODUuNTE4LDM2LjEzNXoiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNjEuOTIzLDUxLjUyMWwtNi44MjEtMy4yNmwwLjgzLTcuMTM0YzAuMDI1LTAuMjE2LTAuMDktMC40MjUtMC4yODUtMC41Mg0KCQljLTAuMTk1LTAuMDk0LTAuNDMxLTAuMDU1LTAuNTg2LDAuMDk5bC01LjA5Nyw1LjA5OGwtNi42NTMtMy4xNzhjLTAuMTk2LTAuMDk0LTAuNDI5LTAuMDU0LTAuNTgzLDAuMDk5DQoJCWMtMC4xNTQsMC4xNTItMC4xOTMsMC4zODYtMC4xLDAuNTgybDMuMTc5LDYuNjU1bC01LjA5OCw1LjA5NmMtMC4xNTQsMC4xNTMtMC4xOTMsMC4zOS0wLjA5OSwwLjU4Ng0KCQljMC4wOTUsMC4xOTUsMC4zMDQsMC4zMSwwLjUyLDAuMjg0bDcuMTMyLTAuODI5bDMuMjU5LDYuODIyYzAuMDk0LDAuMTk0LDAuMjk5LDAuMzA5LDAuNTE0LDAuMjg4czAuMzk1LTAuMTc2LDAuNDQ1LTAuMzg2DQoJCWwxLjg3MS03LjQ3N2w3LjQ3OC0xLjg3MWMwLjA5MS0wLjAyMiwwLjE3My0wLjA3LDAuMjM3LTAuMTM1YzAuMDgyLTAuMDgxLDAuMTM2LTAuMTkxLDAuMTQ4LTAuMzExDQoJCUM2Mi4yMzQsNTEuODE4LDYyLjExOSw1MS42MTMsNjEuOTIzLDUxLjUyMXoiLz4NCjwvZz4NCjwvc3ZnPg0K);
-  background-repeat:no repeat;
-  background-size:64px 64px;
-  width:64px; height:64px;
+  background-repeat:no-repeat;
+  background-size: 64px 64px;
+  width: 64px; height: 64px;
 }
 /* ----- /loading ---- */
 
-
-
 /* ---- weather area ---- */
 skycon {
-  position:absolute;
+  position: absolute;
   z-index: 1;
   opacity: 0.5;
+
   @media #{$medium-only} {
-    right:0;
+    right: 0;
   }
+
   @media #{$large-up} {
-    top:-53px;
-    opacity:0.4;
+    top: -53px;
+    opacity: 0.4;
   }
+
 }
 
 .title h1 {
-  margin:0;
+  margin: 0;
   line-height: 2.1;
 }
 
 .weather-info {
-  margin-bottom:20px; padding-bottom:8px;
+  margin-bottom: 20px; padding: 0 15px 8px 15px;
   text-align: center;
 
   h3, h4 {
@@ -189,17 +204,23 @@ skycon {
     line-height: 1;
   }
 
+  div.border.dark-background {
+    overflow:auto;
+  }
+
   skycon {
-    left:50%; top:0px;
+    left: 50%; top: 0px;
     canvas {
-      position:relative;
-      left:-50%;
+      position: relative;
+      left: -50%;
     }
   }
+
   @media #{$medium-up} {
     margin-bottom: 40px;
+    
     .border-top {
-      border-top:none;
+      border-top: none;
     }
 
     //gives equal height columns for weather info
@@ -208,30 +229,42 @@ skycon {
       display: flex;
       flex: 1;
     }
+
   }
+
 }
 
 /* ---- /weather area ---- */
 
-
 /* ---- movie infomation area ---- */
 .movie-cover {
-  padding:0 20px;
+  padding: 0 20px;
   text-align: center;
    
   @media #{$medium-up} {
     float:left;
     min-height: 100px;
     padding:0 0 0 20px;
+    
     img {
       margin-left:-2px;
       min-width: 60%;
-      //-webkit-transform: skew(0deg, 175deg);
     }
+
   }
+
 }
 
-//sneaky lazy-load
+
+.movie-text {
+
+  @media #{$medium-up} {
+    float: right;
+  }
+
+}
+
+//lazy-load the next movie poster
 .poster-next {
   display: none;
 }
@@ -239,127 +272,108 @@ skycon {
 .movie-info {
 
   .columns {
-    padding:10px 20px;
+    padding: 10px 20px;
   }
-  h2 {
-    margin-top:8px; margin-bottom: 15px;
-    line-height: 1;
-  }
-  h3 {
-    margin-bottom: 7px;
-    line-height: 1.2;
-    font-size:21px;
-  }
+
   h2, h3 {
     text-align: center;
   }
 
+  h2 {
+    margin-top: 8px; margin-bottom: 15px;
+    line-height: 1;
+  }
+
+  h3 {
+    margin-bottom: 7px;
+    line-height: 1.2;
+    font-size: 21px;
+  }
+
   ul {
     line-height: 1;
+
     li {
-    float:left;
+    float: left;
     margin-right: 4px;
     list-style: none;
     }
+
   }
 
   @media #{$medium-up} {
     h2, h3 {
       text-align: left;
     }
+
     .movie-description {
-      font-size:18px;
+      font-size: 18px;
     }
+
   }
+
   @media #{$large} {
+
     .info-text {
-      margin:31px 0 13px 0;
+      margin: 31px 0 13px 0;
     }
+
     .movie-description {
-      margin:18px 0;
+      margin: 18px 0;
       font-size: 21px;
     }
+
     h2 {
-      margin-top:-19px;
+      margin-top: -19px;
     }
+
     h3 {
-      margin-top:100px;
+      margin-top: 100px;
       font-size: 29px;
     }
+
     h4 {
-      font-size:18px;
+      font-size: 18px;
     }
+
     button {
-      font-size:18px;
+      font-size: 18px;
     }
+
   }
+
 }
 
 .info-text {
   line-height: 2;
+  overflow:auto;
   text-align: center;
+
   .columns {
-    padding:10px;
+    padding: 10px;
   }
+
   i {
     line-height: 1;
     font-size: 32px;
+
     @media #{$large} {
-      font-size:36px;
+      font-size: 36px;
     }
 
   }
+
   i, p {
     display: inline-block;
   }
+
   p {
-    margin:0 0 0 10px;
+    margin: 0 0 0 10px;
     font-size: 18px;
-    @media #{$large} {
-      
-    }
   }
+
   &:last-child {
     margin-bottom: 20px;
-  }
-}
-
-.rating, .star-background {
-  width:200px;
-  margin: 0 auto;
-  @media #{$large} {
-    width:auto;
-    i {
-      font-size:48px;
-    }
-  }
-}
-
-.average {
-  position:absolute;
-  margin:15px 0 0 205px;
-  font-size:19px;
-  @media #{$large} {
-    margin: 0px 0 0 240px; padding:15px 0;
-    font-size:24px;
-  }
-}
-
-.rating {
-  @media #{$large} {
-    position:relative;
-    left:-20px;
-  }
-}
-
-ul.star-background {
-  position:absolute;
-  left:50%;
-  margin-left: -100px;
-  color:rgba(255,255,255,0.2);
-  @media #{$large} {
-    left:0; 
-    margin-left:0;
   }
 }
 
@@ -368,20 +382,74 @@ ul.star-background {
 }
 
 
-@media #{$large} {
-  .navigation-buttons {
+.navigation-buttons {
+
+  @media #{$large} {
     margin-bottom: 20px;
   }
+
 }
 
 //next two fixes ios flicker on image load/transition
 .fadeInUp, .fadeIn {
   -webkit-transform: translate3d(0, 0, 0);
 }
+
 //here's the magic
 wf-slider .fadeInStart-add, .fadeInStart1-add {
   opacity: 0;
 }
+
+  /* ---- movie rating area ---- */
+  .rating, .star-background {
+    width: 200px;
+    margin: 0 auto;
+
+    @media #{$large} {
+      width: auto;
+
+      i {
+        font-size:48px;
+      }
+
+    }
+
+  }
+
+  .average {
+    position: absolute;
+    margin: 15px 0 0 205px;
+    font-size: 19px;
+
+    @media #{$large} {
+      margin: 0px 0 0 240px; padding: 15px 0;
+      font-size: 24px;
+    }
+
+  }
+
+  .rating {
+
+    @media #{$large} {
+      position: relative;
+      left: -20px;
+    }
+
+  }
+
+  ul.star-background {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    color: rgba(255,255,255,0.2);
+
+    @media #{$large} {
+      left: 0; 
+      margin-left: 0;
+    }
+
+  }
+  /* ---- /movie rating area ---- */
 
 /* ---- /movie information area ---- */
 
@@ -390,8 +458,8 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
 #site {
   position: relative;
   z-index: 10;
-  width: 100%; height:auto;
-  background:#444444;
+  width: 100%; height: auto;
+  background: #444444;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
@@ -405,7 +473,7 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
   &:before {
   position: absolute;
   left: -4px;
-  width:4px; height: 100%;
+  width: 4px; height: 100%;
   background: #3B3E3E; content: '';
   }
 
@@ -415,16 +483,18 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
     -o-transform: translate3d(-250px, 0, 0);
     transform: translate3d(-250px, 0, 0);
   }
+
   @media #{$medium-up} {
     height: 100%;
   }
 
 }
+
 #offcanvas-menu-button {
-  position:relative;
+  position: relative;
   display: inline-block;
   float: right;
-  margin:0; padding:0;
+  margin: 0; padding: 0;
   z-index: 99;
   width: 44px; height: 44px;
   background: transparent; border: 1px solid transparent;
@@ -438,49 +508,48 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
     -webkit-box-shadow: 1px 10px 1px 1px #ffffff, 1px 16px 1px 1px #ffffff, 1px 22px 1px 1px #ffffff;
     box-shadow: 0 10px 0 1px #ffffff, 0 16px 0 1px #ffffff, 0 22px 0 1px #ffffff;
   }
+
 }
 
-//side-nav
-#side-nav {
-  position: absolute;
-  width: 100%; height: 100%;
-  opacity: 0;
-  background: #000000;
-  
-  .inner-wrap {
-    float: right;
-    padding:0 20px;
-    width:250px;
-    h3 {
-      padding-bottom:8px;
-      font-size:27px;
-      text-align:center;
-      border-bottom:1px solid #ffffff;
+  /* ---- navigation ---- */
+  #side-nav {
+    position: absolute;
+    width: 100%; height: 100%;
+    opacity: 0;
+    background: #000000;
+    
+    .inner-wrap {
+      float: right;
+      padding: 0 20px;
+      width: 250px;
+
+      h3 {
+        padding-bottom: 8px;
+        font-size: 27px;
+        text-align: center;
+        border-bottom: 1px solid #ffffff;
+      }
+
+    }
+
+    ul {
+      list-style: none;
+      margin: 0; padding: 0;
+    }
+
+    .fi-social-twitter + a {
+      margin-right: 10px;
+    }
+
+    i {
+      margin-right:5px;
+      font-size:16px;
+      color:$primary-color;
     }
   }
-
-  ul {
-    list-style: none;
-    margin: 0; padding: 0;
-  }
-
-  li a {
-  display: block;
-  margin-bottom: 15px; padding: 12px 0 0 0;
-  color: #ffffff;
-  }
-  .social {
-    margin-right: 10px;
-  }
-  i {
-    margin-right:5px;
-    font-size:16px;
-    color:$primary-color;
-  }
-}
+  /* ---- /navigation ---- */
 
 /* ---- /off canvas nav/info area ---- */
-
 
 /* ---- transitions ---- */
 .startAnimate{
@@ -499,18 +568,19 @@ wf-slider .fadeInStart-add, .fadeInStart1-add {
 }
 /* ---- /transitions ---- */
 
-
 /* ---- icons ---- */
 i {
-  font-size:42px;
+  font-size: 42px;
 }
 
 .last {
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
+
   i {
     display: block;
   }
+
 }
 /* ---- /icons ---- */
 
@@ -521,13 +591,16 @@ i {
 }
 
 .lte-ie9 .hidden {
-    position:relative;
-    display:block;
+  position:relative;
+  display:block;
+  float:none;
+  padding:30px 0;
+  z-index: 50;
+  
+  & > div {
     float:none;
-    padding:30px 0;
-    z-index: 50;
-    & > div {
-      float:none;
-      margin: 0 auto;
-    }
+    margin: 0 auto;
+  }
+
 }
+/* ---- /less than/equal IE9 sad message :_( ---- */
