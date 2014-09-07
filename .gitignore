@@ -4,8 +4,8 @@
 package.json
 Gruntfile.js
 gulpfile.js
-.bowercc
 config.rb
 bower.json
-.gitignore
+*.bowercc
+*.gitignore
 *.DS_Store
