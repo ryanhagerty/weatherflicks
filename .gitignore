@@ -1,7 +1,8 @@
 /bower_components/*
 /.sass-cache/*
 /node_modules/*
-/cleaned/*
 package.json
 Gruntfile.js
+gulpfile.js
+.bowercc
 *.DS_Store
