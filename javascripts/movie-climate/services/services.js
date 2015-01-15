@@ -29,7 +29,7 @@ wfServices.factory('locationService', function($http, $q, ngProgress) {
 
 	  //if geolocation fails, let's use an ip based backup for coordinates 
 	  }, function(error) {
-	    $http.jsonp('http://freegeoip.net/json/?callback=JSON_CALLBACK').success(function(data) {
+	    $http.jsonp('http://www.telize.com/geoip?callback=JSON_CALLBACK').success(function(data) {
 		  loc.lat = data.latitude,
 	      loc.lon = data.longitude;
 	                
