@@ -28,7 +28,7 @@ wfServices.factory('locationService', function($http, $q, ngProgress) {
 		defer.resolve(loc);
 
 	  //if geolocation fails, let's use an ip based backup for coordinates 
-	  }, function(error) {
+	  }).error(function() {
 	    $http.jsonp('http://www.telize.com/geoip?callback=JSON_CALLBACK').success(function(data) {
 		  loc.lat = data.latitude,
 	      loc.lon = data.longitude;
