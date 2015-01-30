@@ -21,26 +21,29 @@ wfServices.factory('locationService', function($http, $q, ngProgress) {
 	  defer = $q.defer();
 
 	  //geolocation latitude and longitude
-	  navigator.geolocation.getCurrentPosition(function(position) {
-	    loc.lat = position.coords.latitude,
-		loc.lon = position.coords.longitude;
+		navigator.geolocation.getCurrentPosition(function(position) {
+		  loc.lat = position.coords.latitude,
+		  loc.lon = position.coords.longitude;
 
-		defer.resolve(loc);
+		  defer.resolve(loc);
 
-	  //if geolocation fails, let's use an ip based backup for coordinates 
-	  }).error(function() {
-	    $http.jsonp('http://www.telize.com/geoip?callback=JSON_CALLBACK').success(function(data) {
-		  loc.lat = data.latitude,
-	      loc.lon = data.longitude;
+		  //if geolocation fails, let's use an ip based backup for coordinates
+		}, function(error) {
+			$http.jsonp('http://freegeoip.net/json/?callback=JSON_CALLBACK').success(function(data) {
+				loc.lat = data.latitude,
+	            loc.lon = data.longitude;
 	                
-	      defer.resolve(loc);
-	  });
-	});
-	
-	return defer.promise;
-    
-    }
-  }
+	            defer.resolve(loc);
+
+			});
+		});
+		
+		return defer.promise;
+
+	  }
+	  
+	}
+
 });
 // /location service
 

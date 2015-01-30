@@ -5,3 +5,4 @@ package.json
 Gruntfile.js
 gulpfile.js
 *.DS_Store
+_notes/*
